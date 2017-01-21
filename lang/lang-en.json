@@ -1,0 +1,150 @@
+{
+	"loginpage": {
+		"title":"Login",
+		"message":"Hello. Login, please.",
+		"loginplaceholder":"Login",
+		"passwordplaceholder":"Password",
+		"buttonsubmit":"LogIn"
+	},
+	"tabswitcher":{
+		"greeting":"Hello, ",
+		"buttonlogout":"Logout",
+		"tabs":{
+			"dashboard":"Dashboard",
+			"tab1":"Tab 1",
+			"tab2":"Tab 2",
+			"feedback":"Feedback",
+			"admin":"Admin page"			
+		}
+	},
+	"dashboard":{
+		"title": "Dashboard",
+		"label": "Сhart"
+	},
+	"tabone": {
+		"username":"User name",
+		"userage":"User age",
+		"userdate":"User date"
+	},
+	"tabtwo":{
+		"message":{
+			"line1":"Please enter right parameters.",
+			"line2":"Name: more than 3 symbols, only first letter in uppercase of the word, only letters",
+			"line3":"Age: should be between 18 and 65",
+			"line4":"Date: in format YYYY/MM/DD",
+			
+			"invalidname":"Name: more than 3 symbols, only first letter in uppercase of the word, only letters",
+			"invalidage":"Age: should be between 18 and 65",
+			"invaliddate":"Date: in format YYYY/MM/DD"
+		},
+		"label":{
+			"description": "Update your data, please.",
+			"name":"Enter your name: ",
+			"age":"Enter your age: ",
+			"date":"Enter date: "
+		},
+		"show":{
+			"name":"New name",
+			"age":"Your new age is",
+			"date":"Your new date is"
+		},
+		"buttonsubmit":"Submit new values"		
+	},
+	"errormodalwindow":{
+		"title":"Something went wrong...",
+		"message":{
+			"type0":"Oops.",
+			"type1":"Please enter correct login and password",
+			"type2":"Please, login to receive access.",
+			"type3":"Error on client side. Sorry.",
+			"type4":"Incorect values.",
+			"type10":"Cann't load all users details.",
+			"type11":"Unable delete user.",
+			"type12":"Unable update user.",
+			"type13":"Unable create user.",
+			"type20":"Unable send feedback."
+
+		},
+		"buttonok":"Ok"
+	}, 
+	"feedback":{
+		"tab":{
+			"title":"Feedback",
+			"label":{
+				"name":"Name",
+				"email":"Email",
+				"textarea":"Message"
+			},
+			"buttons":{
+				"send":"Send"
+			}		
+		},
+		"modal":{
+			"title":"Message content",
+			"buttons":{
+				"send":"Send"
+			}
+		}
+	},
+	"admin":{
+		"tab":{
+			"table":{
+				"login":"Login",
+				"password":"Password",
+				"name":"Name",
+				"age":"Age",
+				"date":"Date",
+				"actions":"Actions"
+			},
+			"buttons":{
+				"add":"Add user",
+				"update":"Update",
+				"delete":"Delete"				
+			}
+		},
+		"modal":{
+			"update":{
+				"title": "Update user",
+				"label":{
+					"description": "Update details, please.",
+					"login":"Enter new login",
+					"password":"Enter new password",
+					"name":"Enter new name",
+					"age":"Enter new age",
+					"date":"Enter new date"
+				},
+				"buttons":{
+					"submit":"Update",
+					"cansel":"Cansel"	
+				}
+			},
+			"delete":{
+				"title": "User delete",
+				"description":{
+					"part1":"User ",
+					"part2":" will be deleted.",
+					"part3":"Are you sure?"
+				},
+				"buttons":{
+					"submit":"Delete",
+					"cansel":"Cansel"	
+				}
+			},
+			"add":{
+				"title": "Create user",
+				"label":{
+					"description": "Enter details, please.",
+					"login":"Enter new login",
+					"password":"Enter new password",
+					"name":"Enter new name",
+					"age":"Enter new age",
+					"date":"Enter new date"
+				},
+				"buttons":{
+					"submit":"Create",
+					"cansel":"Cansel"	
+				}
+			}
+		}
+	}
+}

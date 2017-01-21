@@ -1,0 +1,26 @@
+{
+	"main":{
+		"link":{
+			"login":"http://localhost:8080/#/root/login",
+			"main":"http://localhost:8080/#/root/main/"
+		},
+		"users":{
+			"user2":{
+				"login":"user2",
+				"password":"user2"
+			}
+		},
+		"details":{
+			"user2":{				
+				"name":"user2",	
+				"age":"27",	
+				"date":"2011/09/12"
+			},
+			"user2upd":{				
+				"name":"Lana",	
+				"age":"31",	
+				"date":"1992/03/14"	
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+<svg ng-attr-height='{{chart.mainheight}}' ng-attr-width='{{chart.mainwidth}}' class="mychart">  
+  <polyline ng-repeat="seq in chart.graphs" ng-attr-points={{seq.pointstodraw}} stroke-width="1" ng-attr-stroke={{seq.color}} fill="rgba(256,256,256,0)"></polyline>
+  <text ng-repeat="txt in chart.svgtexts" ng-attr-x={{txt.x}} ng-attr-y={{txt.y}} ng-attr-fill="{{txt.col}}">
+  {{txt.text}}
+  </text>
+  <line ng-repeat="notch in chart.notches" ng-attr-x1={{notch.x1}} ng-attr-y1={{notch.y1}} ng-attr-x2={{notch.x2}} ng-attr-y2={{notch.y2}} stroke="{{notch.col}}" stroke-width="{{notch.width}}"></line>
+</svg>

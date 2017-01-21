@@ -1,0 +1,19 @@
+<div class="container mainwidth spacetop">	
+	<loadmask class="myloadmask hidden"></loadmask>
+	<div class=" col-lg-12  col-md-12  col-sm-12  col-xs-12 ">
+		<div class="row">
+			<div class="col-lg-2 col-lg-offset-10 col-md-2 col-md-offset-10 col-sm-3 col-sm-offset-9 col-xs-9 col-xs-offset-3 ">
+				<select ng-change="vm.translate()" ng-model="vm.selectedLanguage" class=" col-lg-1 col-md-2 col-sm-3 col-xs-9 form-control">
+					<option ng-repeat="lang in vm.languages" ng-attr-value="{{lang.code}}" class="languageoption" ng-bind="lang.name"></option>
+				</select>
+			</div>		
+		</div>
+		<div class="row">
+			<div class="custom-margin-table"></div>
+		</div>
+		<div class="row">
+			<div ui-view>
+			</div>
+		</div>	
+	</div>	
+</div>

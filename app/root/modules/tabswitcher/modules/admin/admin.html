@@ -1,0 +1,24 @@
+<div>	
+	<button ng-click="vm.adduser()" class="btn btn-primary"><span translate="admin.tab.buttons.add" id="adduserbtn"></span></button>
+	<table class="table table-striped col-sm-8">
+		<tr>
+			<th translate="admin.tab.table.login"></th>
+			<th translate="admin.tab.table.password"></th>
+			<th translate="admin.tab.table.name">Name</th>
+			<th translate="admin.tab.table.age">Age</th>
+			<th translate="admin.tab.table.date">Date</th>
+			<th translate="admin.tab.table.actions">Actions</th>
+		</tr>
+		<tr ng-repeat="user in vm.alldetails" id="user">
+			<td ng-bind="user.login"></td>
+			<td ng-bind="user.password"></td>
+			<td ng-bind="user.name"></td>
+			<td ng-bind="user.age"></td>
+			<td ng-bind="user.date"></td>
+			<td id="actionbtns">
+				<button ng-click="vm.update(user.login)" class="btn btn-primary btn-sm" id="updatebtn"><span translate="admin.tab.buttons.update"></span></button>			
+				<button ng-click="vm.delete(user.login)" class="btn btn-warning btn-sm" id="deletebtn"><span translate="admin.tab.buttons.delete"></span></button>
+			</td>			
+		</tr>
+	</table>	
+</div>

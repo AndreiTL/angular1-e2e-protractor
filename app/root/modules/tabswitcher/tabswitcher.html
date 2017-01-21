@@ -1,0 +1,47 @@
+<div>	
+	<button ng-click="vm.logout()" class="btn btn-warning col-lg-2 col-lg-offset-10 col-md-2 col-md-offset-10 col-sm-2 col-sm-offset-10 col-xs-5 col-xs-offset-7 logoutbtn" translate="tabswitcher.buttonlogout" id="logoutbtn"></button>		
+	<div class=" col-lg-11  col-md-11  col-sm-11  col-xs-11 ">
+		<div class="lead">
+			<span translate="tabswitcher.greeting"></span> <span>{{vm.login}}</span>.
+		</div>			
+	</div>	
+	<div class=" col-lg-11  col-md-11  col-sm-11  col-xs-11 ">
+		<uib-tabset>	<!-- switch active tab to selected when go to it from js side -->
+			<uib-tab index="0" ui-sref-active="active" ui-sref='.dashboard'>
+				<uib-tab-heading>
+					<span translate="tabswitcher.tabs.dashboard"></span>
+				</uib-tab-heading>
+				<!-- <div ui-view></div> -->
+			</uib-tab>
+			<uib-tab index="1" ui-sref-active="active" ui-sref='.tab1' id="uitabone">
+				<uib-tab-heading>
+					<span translate="tabswitcher.tabs.tab1"></span>
+				</uib-tab-heading>
+				<!-- <div ui-view></div> -->
+			</uib-tab>
+			<uib-tab index="2" ui-sref-active="active" ui-sref='.tab2' id="uitabtwo">
+				<uib-tab-heading>
+					<span translate="tabswitcher.tabs.tab2"></span>
+				</uib-tab-heading>
+			</uib-tab>
+			<uib-tab index="3" ui-sref-active="active" ui-sref='.admin' ng-if=vm.isAdmin>
+				<uib-tab-heading>
+					<span translate="tabswitcher.tabs.admin"></span>
+				</uib-tab-heading>
+			</uib-tab>
+			<uib-tab index="4" ui-sref-active="active" ui-sref='.feedback' ng-if=vm.isFeedback>
+				<uib-tab-heading>
+					<span translate="tabswitcher.tabs.feedback"></span>
+				</uib-tab-heading>
+			</uib-tab>
+		</uib-tabset>
+	</div>
+	<div class=" col-lg-11  col-md-11  col-sm-11  col-xs-11 ">
+		<div class="custom-margin-table"></div>		
+	</div>
+	<div class=" col-lg-11  col-md-11  col-sm-11  col-xs-11 ">
+		
+		<div ui-view></div>
+
+	</div>
+</div>

@@ -1,0 +1,1 @@
+var loadMaskModule = angular.module('LoadMaskModule',[]);

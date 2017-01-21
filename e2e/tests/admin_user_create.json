@@ -1,0 +1,38 @@
+{
+	"main":{
+		"link":{
+			"login":"http://localhost:8080/#/root/login",
+			"main":"http://localhost:8080/#/root/main/"
+		},
+		"users":{
+			"user1":{
+				"login":"user1",
+				"password":"user1"
+			}
+		},
+		"details":{
+			"user3":{
+				"login":"user3",
+				"password":"user3",
+				"name":"Daniel",	
+				"age":"25",	
+				"date":"1999/01/30"
+			},
+			"user4":{
+				"login":"user4",
+				"password":"user4",
+				"name":"Rafael",	
+				"age":"24",	
+				"date":"2000/09/29"	
+			}
+		},
+		"expected":{
+			"amount1": 2,
+			"amount2": 3,
+			"amount3": 3,
+			"amount4": 3,
+			"amount5": 3,
+			"amount6": 2
+		}
+	}
+}

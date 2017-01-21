@@ -1,0 +1,21 @@
+{
+	"test": " test data",
+	"main":{
+		"link":{
+			"login":"http://localhost:8080/#/root/login",
+			"main":"http://localhost:8080/#/root/main/"
+		},
+		"login":"user2",
+		"password":"user2",				
+		"feedback":{		
+			"name": "Ivan",
+			"email":"Vasiliy, Natasha, Olia, Alex, Inokentiy, John, Sam",
+			"message":"Hello. I am test your application.",
+			"submitselector":"form[ng-submit=\"vm.sendemail()\"]"		
+		},
+		"empty":""
+	},	
+	"modal":{		
+		"text":"From: \"Ivan\". To: \"Vasiliy, Natasha, Olia, Alex, Inokentiy, John, Sam\". Content: \"Hello. I am test your application.\"."
+	}
+}

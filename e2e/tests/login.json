@@ -1,0 +1,14 @@
+{
+	"main":{
+		"link":{
+			"login":"http://localhost:8080/#/root/login",
+			"main":"http://localhost:8080/#/root/main/"
+		},
+		"users":{
+			"user1":{
+				"login":"user1",
+				"password":"user1"
+			}
+		}
+	}
+}

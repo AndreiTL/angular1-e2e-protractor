@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html  ng-app="AndTsApp">
+<head>
+	<meta charset="UTF-8">
+	<title>Task 5</title>
+
+	<script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+	<script type="text/javascript" src="/node_modules/lodash/lodash.js"></script>
+	<script type="text/javascript" src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+	<script type="text/javascript" src="/node_modules/angular-messages/angular-messages.js"></script>	
+	<script type="text/javascript" src="/node_modules/angular-animate/angular-animate.js"></script>
+	<script type="text/javascript" src="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+	<script type="text/javascript" src="/node_modules/angular-translate/dist/angular-translate.js"></script>
+	<script type="text/javascript" src="/node_modules/angular-translate-loader-static-files/angular-translate-loader-static-files.js"></script>
+
+	<script type="text/javascript" src="/main.js"></script>
+
+	<script type="text/javascript" src="/app/common.js"></script>
+	<!-- <script type="text/javascript" src="/app/compressed.js"></script> -->
+
+
+	<!-- <script type="text/javascript" src="/app/utill/services.js"></script>
+	<script type="text/javascript" src="/app/utill/services/interceptor.js"></script>	
+	<script type="text/javascript" src="/app/utill/services/htmlclassmodifier.js"></script>
+	<script type="text/javascript" src="/app/utill/services/checkcredentials.js"></script>
+	<script type="text/javascript" src="/app/utill/services/monthesstorage.js"></script>
+	<script type="text/javascript" src="/app/utill/services/userdetails.js"></script>	
+	<script type="text/javascript" src="/app/utill/services/usercreditsstorage.js"></script>
+	<script type="text/javascript" src="/app/utill/services/userdatastorage.js"></script>
+	<script type="text/javascript" src="/app/utill/services/validators.js"></script>
+
+	<script type="text/javascript" src="/app/utill/providers.js"></script>
+	<script type="text/javascript" src="/app/utill/providers/logprovider.js"></script>
+
+	<script type="text/javascript" src="/app/utill/decorators/logdecorator.js"></script>
+	
+	<script type="text/javascript" src="/app/utill/directives.js"></script>
+	<script type="text/javascript" src="/app/utill/directives/myagevalidator.js"></script>
+	<script type="text/javascript" src="/app/utill/directives/mydatevalidator.js"></script>
+	<script type="text/javascript" src="/app/utill/directives/mynamevalidator.js"></script>
+
+
+
+	<script type="text/javascript" src="/app/root/root.js"></script>
+
+	<script type="text/javascript" src="/app/root/services/languagesstorage.js"></script>
+
+	<script type="text/javascript" src="/app/loadmask/loadmask.js"></script>
+	<script type="text/javascript" src="/app/loadmask/services/loadmask.js"></script>
+	<script type="text/javascript" src="/app/loadmask/derectives/loadmask.js"></script>
+
+	<script type="text/javascript" src="/app/modal/modal.js"></script>
+	<script type="text/javascript" src="/app/modal/services/modalservice.js"></script>
+	
+	<script type="text/javascript" src="/app/root/modules/checksession/checksession.js"></script>
+
+	<script type="text/javascript" src="/app/root/modules/login/login.js"></script>
+	<script type="text/javascript" src="/app/root/modules/login/services/loginservice.js"></script>
+
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/tabswitcher.js"></script>
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/services/logout.js"></script>
+
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/dashboard/dashboard.js"></script>
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/dashboard/services/loadchartdata.js"></script>
+
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/dashboard/modules/diagram/diagram.js"></script>
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/dashboard/modules/diagram/services/charthelper.js"></script>
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/dashboard/modules/diagram/directives/mychart.js"></script>
+
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/tabone/tabone.js"></script>
+
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/tabtwo/tabtwo.js"></script>
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/tabtwo/services/updateuserdetails.js"></script>
+
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/feedback/feedback.js"></script>
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/feedback/services/feedback.js"></script>
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/feedback/decorators/feedbackdecorator.js"></script>	
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/feedback/modules/feedbackmodal/services/feedbackmodal.js"></script>
+
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/admin/admin.js"></script>
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/admin/services/allusersdetails.js"></script>
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/admin/models/allusersdetailsmodel.js"></script>
+
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/admin/modules/adduser/adminaddusermodal.js"></script>
+	
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/admin/modules/deleteuser/admindeleteusermodal.js"></script>
+
+	<script type="text/javascript" src="/app/root/modules/tabswitcher/modules/admin/modules/updateuser/adminupdateusermodal.js"></script> -->
+
+
+	<link rel="stylesheet" type="text/css" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+	<link rel="stylesheet" type="text/css" href="/node_modules/angular-ui-bootstrap/dist/ui-bootstrap-csp.css">
+	<link rel="stylesheet" type="text/css" href="/app/assets/css/style.css">
+
+
+</head>
+<body>
+	<div ui-view>
+						
+	</div>
+
+</body>
+</html>
