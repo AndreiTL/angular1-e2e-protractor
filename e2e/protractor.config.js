@@ -4,7 +4,7 @@ exports.config = {
     includeStackTrace: true,
     getPageTimeout: 10000,
     jasmineNodeOpts: {defaultTimeoutInterval: 120000},
-    
+    seleniumAddress: 'http://localhost:4444/wd/hub',
     capabilities: {
       browserName: 'chrome'
     },
